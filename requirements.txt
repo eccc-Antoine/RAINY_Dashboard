@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 streamlit
 numpy
 pandas
@@ -6,14 +5,3 @@ plotly
 pyproj
 pathlib
 paramiko
-
-=======
-streamlit
-numpy
-pandas
-plotly
-pyproj
-pathlib
-paramiko
-
->>>>>>> origin/master
