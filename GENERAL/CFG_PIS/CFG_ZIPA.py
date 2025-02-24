@@ -21,8 +21,8 @@ divided_by_country=False
 
 available_sections=['NAMAKAN', 'RAINY']
 
-sect_dct={'Namakan Lake':['NAMAKAN'],
-           'Rainy River':['RAINY']}
+sect_dct={'Namakan Reservoir':['NAMAKAN'],
+           'Rainy Lake':['RAINY']}
 
 # available_plans=['OBS', 'Bv7_2014', 'Bv7_2014_ComboC', 'GERBL2_2014BOC_RCP45', 'GERBL2_2014_STO_330', 'GERBL2_2014_ComboC_RCP45', 'GERBL2_2014_ComboC_STO_330']
 #
