@@ -5,7 +5,7 @@ type='1D'
 dct_var={'VAR1':'Rooted cattail', 'VAR2':'Monotypic cattail', 'VAR3':'Total'}
 
 #'normal' means higher is better
-var_direction={'Rooted cattailt':'normal', 'Monotypic cattail': 'inverse', 'Total':'normal'}
+var_direction={'Rooted cattail':'normal', 'Monotypic cattail': 'inverse', 'Total':'normal'}
 
 
 # need to be 'mean' or 'sum', values need to be a list even if there is only one item
