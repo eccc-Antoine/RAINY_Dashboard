@@ -24,6 +24,14 @@ import sys
 import streamlit.components.v1 as components
 #from streamlit_folium import st_folium
 
+import sys
+print(sys.version)
+
+quit()
+
+
+
+
 
 def get_env_var(var, env_name):
     """This function check if an env var is set and if the path of the env var
