@@ -24,10 +24,6 @@ import sys
 import streamlit.components.v1 as components
 #from streamlit_folium import st_folium
 
-import sys
-print(sys.version)
-
-quit()
 
 
 
