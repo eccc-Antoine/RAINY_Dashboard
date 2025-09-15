@@ -16,5 +16,10 @@ COPY . .
 # Expose Streamlit’s default port
 EXPOSE 8501
 
+# Streamlit environment variables
+ENV STREAMLIT_SERVER_HEADLESS=true
+ENV STREAMLIT_SERVER_PORT=8501
+ENV STREAMLIT_SERVER_ENABLECORS=false
+
 # Run the Streamlit app
-CMD ["streamlit", "run", "DASHBOARDS/ISEE/ISEE_DASH_LIGHT_2.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "DASHBOARDS/ISEE/test.py", "--server.port=8501"]
