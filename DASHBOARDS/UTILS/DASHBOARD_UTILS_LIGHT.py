@@ -1276,7 +1276,7 @@ def plan_aggregated_values(Stats, plans_selected, Baseline, Variable, df_PI, uni
 
 #@st.cache_data(ttl=3600)
 def yearly_timeseries_data_prep(ts_code, unique_pi_module_name, folder_raw, PI_code, plans_selected, Baseline, Region,
-                                start_year, end_year, Variable, CFG_DASHBOARD, LakeSL_prob_1D):
+                                start_year, end_year, Variable, CFG_DASHBOARD, LakeSL_prob_1D, sftp):
     print('TIMESERIES_PREP')
 
     unique_PI_CFG = importlib.import_module(f'GENERAL.CFG_PIS.{unique_pi_module_name}')
@@ -1328,11 +1328,11 @@ def yearly_timeseries_data_prep(ts_code, unique_pi_module_name, folder_raw, PI_c
                 filepath=filepath.replace('\\', '/')
 
                 print(f'FILEPATH, {filepath}')
-                #df = read_from_sftp(filepath, sftp)
+                df = read_from_sftp(filepath, sftp)
 
                 #df=read_from_github(filepath)
 
-                df=pd.read_csv(filepath, sep=';')
+                #df=pd.read_csv(filepath, sep=';')
 
                 # if CFG_DASHBOARD.file_ext == '.feather':
                 #     df = pd.read_feather(os.path.join(df_folder, alt, s, feather_name))
