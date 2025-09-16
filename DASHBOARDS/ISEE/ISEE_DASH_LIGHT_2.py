@@ -56,7 +56,7 @@ def set_base_path():
     #CFG_DASHBOARD.tiles_shp = os.path.join(CFG_DASHBOARD.shapefile_folder, CFG_DASHBOARD.tiles_shp_name)
 
 
-set_base_path()
+#set_base_path()
 
 sftp, transport=UTILS.connect_sftp()
 
