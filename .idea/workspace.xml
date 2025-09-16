@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7d25a48-ffd7-4103-bb23-056529b71fce" name="Changes" comment="first try">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DASHBOARDS/ISEE/ISEE_DASH_LIGHT_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/DASHBOARDS/ISEE/ISEE_DASH_LIGHT_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DASHBOARDS/ISEE/CFG_ISEE_DASH_LIGHT.py" beforeDir="false" afterPath="$PROJECT_DIR$/DASHBOARDS/ISEE/CFG_ISEE_DASH_LIGHT.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DASHBOARDS/UTILS/DASHBOARD_UTILS_LIGHT.py" beforeDir="false" afterPath="$PROJECT_DIR$/DASHBOARDS/UTILS/DASHBOARD_UTILS_LIGHT.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757965213476</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="first try">
+      <option name="closed" value="true" />
+      <created>1758037896787</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758037896787</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

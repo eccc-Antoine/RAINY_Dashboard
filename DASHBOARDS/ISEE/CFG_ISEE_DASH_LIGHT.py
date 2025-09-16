@@ -25,7 +25,7 @@ shapefile_folder = ''
 post_process_folder = ''
 
 shapefile_folder_name=fr'\shapefiles'
-post_process_folder_name=fr'\RAINY_post_processed'
+post_process_folder_name=fr'\RAINY_post_processed_test'
 
 sct_poly = ''
 sct_poly_country = ''
