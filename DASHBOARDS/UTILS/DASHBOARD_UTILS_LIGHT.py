@@ -1281,12 +1281,12 @@ def yearly_timeseries_data_prep(ts_code, unique_pi_module_name, folder_raw, PI_c
 
     unique_PI_CFG = importlib.import_module(f'GENERAL.CFG_PIS.{unique_pi_module_name}')
 
-
     df_folder = os.path.join(folder_raw, PI_code, 'YEAR', 'SECTION')
+
+    print(df_folder)
 
     # github_path="https://raw.githubusercontent.com/eccc-Antoine/RAINY_Dashboard/master/post_processed_data/RAINY_post_processed"
     # df_folder=os.path.join(github_path, PI_code, 'YEAR', 'SECTION')
-
 
     dfs = []
     feather_done = []

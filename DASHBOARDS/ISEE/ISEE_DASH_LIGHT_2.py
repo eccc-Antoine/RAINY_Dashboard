@@ -56,9 +56,10 @@ def set_base_path():
     #CFG_DASHBOARD.tiles_shp = os.path.join(CFG_DASHBOARD.shapefile_folder, CFG_DASHBOARD.tiles_shp_name)
 
 
-#set_base_path()
+set_base_path()
 
 sftp, transport=UTILS.connect_sftp()
+
 
 st.set_page_config(
     page_title='RAINY Dashboard',
@@ -71,6 +72,9 @@ st.set_page_config(
 folder = CFG_DASHBOARD.post_process_folder
 pis_code = CFG_DASHBOARD.pi_list
 tss_code=CFG_DASHBOARD.ts_list
+
+print(folder)
+
 
 pi_dct = {}
 unit_dct = {}
