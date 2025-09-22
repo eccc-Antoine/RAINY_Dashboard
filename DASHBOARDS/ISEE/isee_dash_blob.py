@@ -31,10 +31,7 @@ import io
 
 #from azure.identity import DefaultAzureCredential
 
-# quit()
-#
-# connect_string = st.secrets["AZURE_STORAGE_CONNECTION_STRING"]
-# container_name = "isee-test"
+
 container_client=UTILS.connect_blob(env_var_name="AZURE_STORAGE_CONNECTION_STRING", container_name)
 
 def get_env_var(var, env_name):
