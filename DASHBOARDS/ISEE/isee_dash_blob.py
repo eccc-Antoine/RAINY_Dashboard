@@ -31,6 +31,7 @@ import io
 
 #from azure.identity import DefaultAzureCredential
 
+print('allo')
 
 container_client=UTILS.connect_blob(env_var_name="AZURE_STORAGE_CONNECTION_STRING", container_name)
 
