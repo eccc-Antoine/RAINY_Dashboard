@@ -33,7 +33,7 @@ import io
 
 print('allo')
 
-container_client=UTILS.connect_blob(env_var_name="AZURE_STORAGE_CONNECTION_STRING", container_name)
+container_client=UTILS.connect_blob( container_name, env_var_name="AZURE_STORAGE_CONNECTION_STRING", )
 
 def get_env_var(var, env_name):
     """This function check if an env var is set and if the path of the env var
