@@ -29,7 +29,7 @@ import io
 
 #st.write('imports done!')
 
-connect_string="DefaultEndpointsProtocol=https;AccountName=eccciseedashboardst;AccountKey=pjFcVLVSJkLXt4EOxKTta9xxndI95UuVoLcru0yWUC0aiJP4hWh+MY3G9SAVSz3i9z43X42rEabj+ASt2THCtg==;EndpointSuffix=core.windows.net"
+connect_string = st.secrets["AZURE_STORAGE_CONNECTION_STRING"]
 container_name = "isee-test"
 container_client=UTILS.connect_blob(connect_string, container_name)
 
