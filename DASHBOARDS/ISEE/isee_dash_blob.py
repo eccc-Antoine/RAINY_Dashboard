@@ -33,7 +33,7 @@ import io
 
 print('allo')
 
-container_name='isee-test
+container_name='isee-test'
 container_client=UTILS.connect_blob( container_name, env_var_name="AZURE_STORAGE_CONNECTION_STRING", )
 
 def get_env_var(var, env_name):
