@@ -5,3 +5,4 @@ plotly
 pyproj
 pathlib
 paramiko
+azure-storage-blob

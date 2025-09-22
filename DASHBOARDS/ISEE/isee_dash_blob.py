@@ -11,8 +11,8 @@ from pathlib import Path
 import sys
 #import io
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
-import CFG_ISEE_DASH_LIGHT as CFG_DASHBOARD
-from DASHBOARDS.UTILS import DASHBOARD_UTILS_LIGHT as UTILS
+import CFG_DASH_BLOB as CFG_DASHBOARD
+from DASHBOARDS.UTILS import DASHBOARD_UTILS_BLOB as UTILS
 #import geopandas as gpd
 import tempfile
 #import json
@@ -24,7 +24,14 @@ import sys
 import streamlit.components.v1 as components
 #from streamlit_folium import st_folium
 
+from azure.storage.blob import BlobServiceClient
+import io
+
 #st.write('imports done!')
+
+connect_string="DefaultEndpointsProtocol=https;AccountName=eccciseedashboardst;AccountKey=pjFcVLVSJkLXt4EOxKTta9xxndI95UuVoLcru0yWUC0aiJP4hWh+MY3G9SAVSz3i9z43X42rEabj+ASt2THCtg==;EndpointSuffix=core.windows.net"
+container_name = "isee-test"
+container_client=UTILS.connect_blob(connect_string, container_name)
 
 def get_env_var(var, env_name):
     """This function check if an env var is set and if the path of the env var
@@ -57,7 +64,7 @@ def set_base_path():
 
 set_base_path()
 
-sftp, transport=UTILS.connect_sftp()
+#sftp, transport=UTILS.connect_sftp()
 
 st.set_page_config(
     page_title='RAINY Dashboard',
@@ -237,7 +244,7 @@ def render_column1():
 
         var_direction = unique_PI_CFG.var_direction[Variable]
 
-        df_PI= UTILS.yearly_timeseries_data_prep(ts_code, unique_pi_module_name, folder, PI_code, plans_selected, Baseline, Region, start_year, end_year, Variable, CFG_DASHBOARD, LakeSL_prob_1D, sftp)
+        df_PI= UTILS.yearly_timeseries_data_prep(ts_code, unique_pi_module_name, folder, PI_code, plans_selected, Baseline, Region, start_year, end_year, Variable, CFG_DASHBOARD, LakeSL_prob_1D, container_client)
 
 
         #df_PI= UTILS.yearly_timeseries_data_prep(ts_code, unique_pi_module_name, folder, PI_code, plans_selected, Baseline, Region, start_year, end_year, Variable, CFG_DASHBOARD, LakeSL_prob_1D)
