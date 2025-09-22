@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d25a48-ffd7-4103-bb23-056529b71fce" name="Changes" comment="first try">
-      <change afterPath="$PROJECT_DIR$/.streamlit/secrets.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.streamlit/secrets.toml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DASHBOARDS/ISEE/isee_dash_blob.py" beforeDir="false" afterPath="$PROJECT_DIR$/DASHBOARDS/ISEE/isee_dash_blob.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DASHBOARDS/UTILS/DASHBOARD_UTILS_BLOB.py" beforeDir="false" afterPath="$PROJECT_DIR$/DASHBOARDS/UTILS/DASHBOARD_UTILS_BLOB.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,7 @@
     "Python.ISEE_DASH_LIGHT_2.executor": "Run",
     "Python.ISEE_POSTPROCESS.executor": "Run",
     "Python.bidon.executor": "Run",
+    "Python.isee_dash_blob.executor": "Run",
     "Python.sftp_file_transfer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -224,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758568023621</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="first try">
+      <option name="closed" value="true" />
+      <created>1758568762145</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1758568762145</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

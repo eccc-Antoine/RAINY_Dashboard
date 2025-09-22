@@ -31,18 +31,17 @@ import requests
 from azure.storage.blob import BlobServiceClient
 import io
 
-# hostname = 'sanijcfilesharingprod.blob.core.windows.net'
-# port = 22
-# username = 'sanijcfilesharingprod.amaranda'
-# password = 'fk8alyBfLpgSz+8zh/3Qq1UqKcqYoyiG'
 
-
-
-
-def connect_blob(connect_string, container_name):
+def connect_blob(env_var_name="AZURE_STORAGE_CONNECTION_STRING", container_name):
     #AZURE_STORAGE_CONNECTION_STRING = st.secrets[connect_string]
-    AZURE_STORAGE_CONNECTION_STRING=connect_string
-    blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
+    # AZURE_STORAGE_CONNECTION_STRING=connect_string
+    # blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
+    # container_client = blob_service_client.get_container_client(container_name)
+    connection_string = os.environ.get(env_var_name)
+    if not connection_string:
+        raise ValueError(f"Environment variable '{env_var_name}' not set.")
+
+    blob_service_client = BlobServiceClient.from_connection_string(connection_string)
     container_client = blob_service_client.get_container_client(container_name)
     return container_client
 
