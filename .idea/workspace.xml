@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d25a48-ffd7-4103-bb23-056529b71fce" name="Changes" comment="first try" />
+    <list default="true" id="e7d25a48-ffd7-4103-bb23-056529b71fce" name="Changes" comment="first try">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DASHBOARDS/UTILS/DASHBOARD_UTILS_BLOB.py" beforeDir="false" afterPath="$PROJECT_DIR$/DASHBOARDS/UTILS/DASHBOARD_UTILS_BLOB.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -269,7 +272,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758570615969</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="first try">
+      <option name="closed" value="true" />
+      <created>1758570673060</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1758570673060</updated>
+    </task>
+    <task id="LOCAL-00027" summary="first try">
+      <option name="closed" value="true" />
+      <created>1758571342655</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1758571342655</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

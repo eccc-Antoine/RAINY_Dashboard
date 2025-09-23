@@ -34,6 +34,7 @@ import io
 
 def connect_blob(container_name, env_var_name="AZURE_STORAGE_CONNECTION_STRING"):
     connection_string = os.environ.get(env_var_name)
+    st.write(env_var_name)
     if not connection_string:
         raise ValueError(f"Environment variable '{env_var_name}' not set.")
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
